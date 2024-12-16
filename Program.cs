@@ -68,7 +68,9 @@ namespace _12._13
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World! ");
+            int[] szamok = new int[10];
+            F01(szamok);
+            F05(szamok);
         }
     }
 }
