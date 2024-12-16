@@ -54,6 +54,18 @@ namespace _12._13
             return paratlanok;
         }
 
+        static void F05(int[] szamok)
+        {
+            System.Console.WriteLine("Ennyi db pozi szám van a tombben: " + F02(szamok));
+            System.Console.WriteLine("A tömb elemeinek átlaga: " + F03(szamok));
+            System.Console.WriteLine("A tömbbol alkotott paratlan szamok: ");
+            foreach (var item in F04(szamok))
+            {
+                System.Console.Write(item + ", ");
+            }
+            System.Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World! ");
