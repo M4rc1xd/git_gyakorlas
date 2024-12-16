@@ -26,6 +26,17 @@ namespace _12._13
             return ossz;
         }
 
+        static double F03(int[] szamok)
+        {
+            double atlag = 0;
+            for (int i = 0; i < szamok.Length; i++)
+            {
+                atlag += szamok[i];
+            }
+            atlag /= szamok.Length;
+            return atlag;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World! ");
