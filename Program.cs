@@ -37,6 +37,23 @@ namespace _12._13
             return atlag;
         }
 
+        static int[] F04(int[] szamok)
+        {
+            int[] paratlanok = new int[10];
+            for (int i = 0; i < szamok.Length; i++)
+            {
+                if (szamok[i] % 2 == 0)
+                {
+                    paratlanok[i] = szamok[i] + 1;
+                }
+                else
+                {
+                    paratlanok[i] = szamok[i];
+                }
+            }
+            return paratlanok;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World! ");
