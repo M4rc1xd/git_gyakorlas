@@ -10,7 +10,7 @@ namespace _12._13
             for (int i = 0; i < szamok.Length; i++)
             {
                 szamok[i] = r.Next(1, 51);
-            }
+            } 
         }
 
         static void Main(string[] args)
