@@ -5,7 +5,7 @@ namespace _12._13
     internal class Program
     {
         static Random r = new Random();
-        static void f01(int[] szamok)
+        static void F01(int[] szamok)
         {
             for (int i = 0; i < szamok.Length; i++)
             {
@@ -13,9 +13,22 @@ namespace _12._13
             } 
         }
 
+        static int F02(int[] szamok)
+        {
+            int ossz =0;
+            for (int i = 0; i < szamok.Length; i++)
+            {
+                if (szamok[i] % 2 == 0)
+                {
+                    ossz += szamok[i];
+                }
+            }
+            return ossz;
+        }
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World! ");
         }
     }
 }
